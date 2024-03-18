@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Your Website Title</title>
+    <script src="Javascript.js" defer></script>
 </head>
 <body>
+    <nav>   
+
+    <div class="navbar"> <!--Lab 5,Part C-->
+        <a href="index.html" class="active" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</a> <!--Lab 5,Part D-->
+        <div class="dropdown" onmouseover="mouseOverDropdown(this)" onmouseout="mouseOutDropdown(this)">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="/Work Experience.html/">Work Experience</a>
+                <a href="/Coursework.html">Coursework</a>
+            </div>
+        </div>
+        <a href="My Picture.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">My Picture</a>
+    </div>
+    </nav>    
+    <main>
     <h1>Muhammad Yousuf Amray</h1>
     <p>Toronto, ON | +1(647)302-2089 | yousuf.amray@torontomu.ca</p>
     <hr>
@@ -20,7 +36,7 @@
         implementation. <br> ● Performed moderately complex data analysis and data profiling against source systems and data warehouse. <br> ● Provided end-user support in the post-deployment phase; assessed and evaluated all feedback to ensure that the
         requirements necessary to correct issues were addressed
         
-        
+    
     </p>
 
     <h3>Coursework</h3>
@@ -29,7 +45,7 @@
         extracted stock data using python packages, and applied smoothed recession probabilities for the United States using
         dynamic-factor Markov-switching model to four monthly coincident variables. <br> ● Extracted data related to stocks using Python codes and packages. <br> ● Applied Dynamic-factor Markov-switching model to four monthly coincident variables. <br> ● To predict and present when the recession will hit the US again.
     </p>
-
+    </main>
     <!-- CSS Table -->
     <div class="table-container">
         <div class="table-text table-cell">
@@ -42,6 +58,12 @@
             <p>My Github Portfolio Link</p>
         </div>
     </div>
+    <br>
+    <button id="nameButton">Enter Your Name</button> <!--Lab 5,Part A-->
+    <div id="output"></div>
+    <h1>Click the Image to Enlarge</h1> <!--Lab 5,Part B-->
+    <img id="enlargedImage" src="My Picture.jpg" alt="My Picture">
+
 
     <footer>
         <p>&copy; 2024 Muhammad Yousuf Amray. All rights reserved.</p>
